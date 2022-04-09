@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Dto\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="Base\" />
+    <Folder Include="IBase\" />
+    <Folder Include="Static\" />
+  </ItemGroup>
+
+</Project>
