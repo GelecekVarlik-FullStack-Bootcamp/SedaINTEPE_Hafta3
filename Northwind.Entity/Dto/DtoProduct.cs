@@ -1,18 +1,18 @@
 ﻿using Northwind.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwind.Entity.Dto
 {
-    public partial class Product:EntityBase
+    public class DtoProduct : DtoBase
     {
-        public Product()
+        public DtoProduct()
         {
-            OrderDetails = new HashSet<OrderDetail>();
-        }
 
+        }
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public int? SupplierId { get; set; }
@@ -24,8 +24,5 @@ namespace Northwind.Entity.Models
         public short? ReorderLevel { get; set; }
         public bool Discontinued { get; set; }
 
-        public virtual Category Category { get; set; }
-        public virtual Supplier Supplier { get; set; }
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

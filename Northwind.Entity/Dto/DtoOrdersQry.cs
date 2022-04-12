@@ -1,16 +1,17 @@
 ﻿using Northwind.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwind.Entity.Dto
 {
-    public partial class Order:EntityBase
+    public class DtoOrdersQry:DtoBase
     {
-        public Order()
+        public DtoOrdersQry()
         {
-            OrderDetails = new HashSet<OrderDetail>();
+
         }
 
         public int OrderId { get; set; }
@@ -27,10 +28,11 @@ namespace Northwind.Entity.Models
         public string ShipRegion { get; set; }
         public string ShipPostalCode { get; set; }
         public string ShipCountry { get; set; }
-
-        public virtual Customer Customer { get; set; }
-        public virtual Employee Employee { get; set; }
-        public virtual Shipper ShipViaNavigation { get; set; }
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public string CompanyName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string Region { get; set; }
+        public string PostalCode { get; set; }
+        public string Country { get; set; }
     }
 }

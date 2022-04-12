@@ -1,13 +1,18 @@
 ﻿using Northwind.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwind.Entity.Dto
 {
-    public partial class ProductsByCategory:EntityBase
+    public class DtoProductsByCategory:DtoBase
     {
+        public DtoProductsByCategory()
+        {
+
+        }
         public string CategoryName { get; set; }
         public string ProductName { get; set; }
         public string QuantityPerUnit { get; set; }

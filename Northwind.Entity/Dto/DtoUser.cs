@@ -1,13 +1,18 @@
 ﻿using Northwind.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwind.Entity.Dto
 {
-    public partial class User:EntityBase
+    public class DtoUser:DtoBase
     {
+        public DtoUser()
+        {
+
+        }
         public int UserId { get; set; }
         public string UserName { get; set; }
         public string UserLastName { get; set; }

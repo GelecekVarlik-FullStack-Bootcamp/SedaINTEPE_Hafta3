@@ -1,13 +1,18 @@
 ﻿using Northwind.Entity.Base;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Northwind.Entity.Models
+namespace Northwind.Entity.Dto
 {
-    public partial class Invoice:EntityBase
+    public class DtoInvoice:DtoBase
     {
+        public DtoInvoice()
+        {
+
+        }
         public string ShipName { get; set; }
         public string ShipAddress { get; set; }
         public string ShipCity { get; set; }
