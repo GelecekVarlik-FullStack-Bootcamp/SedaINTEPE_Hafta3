@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Northwind.Entity.IBase
 {
-    interface IResponse//geri dondur
+    public interface IResponse//geri dondur
     {
     }
-    interface IResponse<T> //generic yaptık
+   public interface IResponse<T> //generic yaptık
     {
     }
 }
