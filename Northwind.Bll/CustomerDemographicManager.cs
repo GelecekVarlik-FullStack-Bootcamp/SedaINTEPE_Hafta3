@@ -1,15 +1,15 @@
 ﻿using Northwind.Bll;
 using Northwind.Entity.Dto;
 using Northwind.Entity.Models;
+using Northwind.Interface;
 using System.Linq;
 
 
-namespace Northwind.Interface
+namespace Northwind.Bll
 {
-    public class CustomerDemographicManager : GenericManager<CustomerDemographic, DtoCustomerDemographic>,ICustomerDemographicService
+    public class CustomerDemographicManager : GenericManager<CustomerDemographic, DtoCustomerDemographic>, ICustomerDemographicService
     {
-       
-        IQueryable<DtoCustomerDemographic> ICustomerDemographicService.GetTotalReport()
+        public IQueryable<DtoCustomerDemographic> GetTotalReport()
         {
             throw new System.NotImplementedException();
         }
